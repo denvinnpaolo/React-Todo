@@ -10,11 +10,11 @@ const ToDoList = props =>{
         <div className>
             <div className="todoContainer">
                 {props.list.map(task=>(
-                    <Todo key={task.id} task={task} toggleItem={props.toggleTask}/>
+                    <Todo key={task.id} task={task} toggleTask={props.toggleTask}/>
                 ))}
             </div>
             <div className="todoFormContainer">
-                <TodoForm addItem={props.addItem}/>
+                <TodoForm addItem={props.addItem} clearCompleted={props.clearCompleted}/>
             </div>
         </div>
 
