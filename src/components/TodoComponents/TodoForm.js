@@ -22,12 +22,12 @@ class TodoForm extends React.Component{
             <form onSubmit={this.handleSubmit}>
                 <input
                     type="text"
-                    name="item"
+                    name="task"
                     value={this.state.toDoItem}
                     onChange={this.handleChanges}
                 />
                 <button>Add Todo</button>
-                <button>Clear Completed</button>
+                <button onClick={this.props.clearCompleted}>Clear Completed</button>
             </form>
         );
     }

@@ -1,12 +1,12 @@
 import React from "react";
 
 const Todo = props =>{
-    console.log(props)
+    // console.log(props)
     return(
         <div 
             className={`item${props.task.completed ? " completed" : ""}`}
             onClick={()=>{
-                props.toggleItem(props.task.id);
+                props.toggleTask(props.task.id);
             }}
         >
             <p>{props.task.task}</p>
